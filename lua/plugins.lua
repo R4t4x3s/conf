@@ -30,10 +30,9 @@ return require('packer').startup(function(use)
         }
     }
     use {
-        'romgrk/barbar.nvim',
-        requires = {
-            'nvim-web-devicons'
-        }
+        'akinsho/bufferline.nvim',
+        tag = "v3.*",
+        requires = 'nvim-tree/nvim-web-devicons'
     }
     use {
         'VonHeikemen/lsp-zero.nvim',
