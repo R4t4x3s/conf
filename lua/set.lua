@@ -2,7 +2,6 @@ local options = {
     number = true,                           -- set numbered lines
     relativenumber = true,                  -- set relative numbered lines
     numberwidth = 2,                         -- set number column width to 2 {default 4}
-    laststatus = 3,                          -- only show one status line
 
     backup = false,                          -- creates a backup file
     swapfile = false,                        -- creates a swapfile
