@@ -14,16 +14,18 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-
-    use 'navarasu/onedark.nvim'
-    use { 
+    -- personal dev
+    use "/home/rami/projects/vplug/stack_map.nvim"
+    ---------------------------------
+    use 'ofirgall/ofirkai.nvim'
+    use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
     use {
       "nvim-neo-tree/neo-tree.nvim",
         branch = "v2.x",
-        requires = { 
+        requires = {
           "nvim-lua/plenary.nvim",
           "nvim-tree/nvim-web-devicons",
           "MunifTanjim/nui.nvim",
@@ -53,6 +55,8 @@ return require('packer').startup(function(use)
         }
     }
     --]]
+    use { 'TimUntersberger/neogit' }
+    use { 'sindrets/diffview.nvim' }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

@@ -74,15 +74,20 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
+  ["diffview.nvim"] = {
     loaded = true,
-    path = "/home/rami/.local/share/nvim/site/pack/packer/start/LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
+    path = "/home/rami/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
   },
   ["neo-tree.nvim"] = {
     loaded = true,
     path = "/home/rami/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
+  neogit = {
+    loaded = true,
+    path = "/home/rami/.local/share/nvim/site/pack/packer/start/neogit",
+    url = "https://github.com/TimUntersberger/neogit"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -99,10 +104,10 @@ _G.packer_plugins = {
     path = "/home/rami/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
-  ["onedark.nvim"] = {
+  ["ofirkai.nvim"] = {
     loaded = true,
-    path = "/home/rami/.local/share/nvim/site/pack/packer/start/onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
+    path = "/home/rami/.local/share/nvim/site/pack/packer/start/ofirkai.nvim",
+    url = "https://github.com/ofirgall/ofirkai.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -113,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/rami/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["stack_map.nvim"] = {
+    loaded = true,
+    path = "/home/rami/.local/share/nvim/site/pack/packer/start/stack_map.nvim",
+    url = "/home/rami/projects/vplug/stack_map.nvim"
   }
 }
 

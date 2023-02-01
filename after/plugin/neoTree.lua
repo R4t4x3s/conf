@@ -3,7 +3,7 @@ if not ok then
     print("cannot find neo-tree")
     return
 end
-
+local opts = { noremap = true, silent = true }
 local bind = vim.keymap.set
 
 neotree.setup({
