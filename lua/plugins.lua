@@ -29,11 +29,7 @@ return require('packer').startup(function(use)
           "MunifTanjim/nui.nvim",
         }
     }
-    use {
-        'akinsho/bufferline.nvim',
-        tag = "v3.*",
-        requires = 'nvim-tree/nvim-web-devicons'
-    }
+    --[[
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
@@ -56,6 +52,7 @@ return require('packer').startup(function(use)
             {'rafamadriz/friendly-snippets'}, -- Optional
         }
     }
+    --]]
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
