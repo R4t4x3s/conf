@@ -1,4 +1,4 @@
-require("set")
-require("keymaps")
+require('set')
+require('keymaps')
 require('plugins')
-require("highlights")
+require('highlights')
