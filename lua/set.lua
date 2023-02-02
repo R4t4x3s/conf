@@ -53,7 +53,7 @@ local options = {
     --  timeoutlen = 1000,                        -- time to wait for a mapped sequence to complete (in milliseconds)
 }
 
-vim.opt.shortmess:append "c"
+--vim.opt.shortmess:append "c"
 
 vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
