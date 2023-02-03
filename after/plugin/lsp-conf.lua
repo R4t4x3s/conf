@@ -15,6 +15,7 @@ if not ok then
     return
 end
 local lua_lsp = lsp_conf.sumneko_lua
+local rust_lsp = lsp_conf.rust_analyzer
 -- ALWAYS SETUP MASON THEN MASON_LSPCONF THEN LSPCONF
 -- ---------------------------------------------------
 -- ---------------------------------------------------
@@ -39,7 +40,7 @@ mason_lsp_conf.setup({})
 --  LSP_CONF
 -- ---------------------------------------------------
 -- ---------------------------------------------------
-local lua_attach = function()
+local general_on_attach = function()
     local opts = { noremap = true, silent = true, buffer=0 } -- activate mapping only for the current buffer
     vim.api.nvim_buf_set_option(0, 'omnifunc', 'v:lua.vim.lsp.omnifunc') -- I_<c-x><c-o>
     vim.keymap.set("n","K", vim.lsp.buf.hover, opts)
@@ -47,9 +48,10 @@ local lua_attach = function()
     vim.keymap.set("n","<leader>gt", vim.lsp.buf.type_definition, opts)
     vim.keymap.set("n","<leader>gi", vim.lsp.buf.implementation, opts)
     vim.keymap.set("n","<leader>gr", vim.lsp.buf.references, opts)
+    vim.keymap.set("n","<leader>rr", vim.lsp.buf.rename, opts)
 end
 lua_lsp.setup({
-    on_attach = lua_attach,
+    on_attach = general_on_attach,
     settings = {
         Lua = {
             diagnostics = {
@@ -59,5 +61,7 @@ lua_lsp.setup({
         }
     }
 })
-
+rust_lsp.setup({
+    on_attach = general_on_attach
+})
 
