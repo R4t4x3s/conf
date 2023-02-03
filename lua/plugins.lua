@@ -31,9 +31,17 @@ return require('packer').startup(function(use)
           "MunifTanjim/nui.nvim",
         }
     }
+    ---------------------------------------------
+    ---------------------------------------------
     use {'neovim/nvim-lspconfig'}
     use {'williamboman/mason.nvim'}
     use {'williamboman/mason-lspconfig.nvim'}
+--    use {'hrsh7th/nvim-cmp'}
+--    use {'hrsh7th/cmp-buffer'}
+--    use {'hrsh7th/cmp-path'}
+--    use {'hrsh7th/cmp-nvim-lsp'}
+    ---------------------------------------------
+    ---------------------------------------------
     --[[
     use {
         'VonHeikemen/lsp-zero.nvim',

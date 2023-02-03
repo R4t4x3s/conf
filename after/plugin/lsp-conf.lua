@@ -31,7 +31,6 @@ local mason_confg = {
     }
 }
 mason.setup(mason_confg)
-
 --  MASON_LSP_CONF
 -- ---------------------------------------------------
 -- ---------------------------------------------------
@@ -42,6 +41,7 @@ mason_lsp_conf.setup({})
 -- ---------------------------------------------------
 local lua_attach = function()
     local opts = { noremap = true, silent = true, buffer=0 } -- activate mapping only for the current buffer
+    vim.api.nvim_buf_set_option(0, 'omnifunc', 'v:lua.vim.lsp.omnifunc') -- I_<c-x><c-o>
     vim.keymap.set("n","K", vim.lsp.buf.hover, opts)
     vim.keymap.set("n","<leader>gd", vim.lsp.buf.definition, opts)
     vim.keymap.set("n","<leader>gt", vim.lsp.buf.type_definition, opts)
