@@ -138,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/rami/.local/share/nvim/site/pack/packer/start/stack_map.nvim",
     url = "/home/rami/projects/vplug/stack_map.nvim"
+  },
+  ["symbols-outline.nvim"] = {
+    loaded = true,
+    path = "/home/rami/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
   }
 }
 
