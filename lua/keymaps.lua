@@ -31,7 +31,7 @@ bind('n', '<leader>w', ':w<CR>', opts)   -- save current
 bind('n', '<leader><leader>w', ':wa<CR>', opts) --save all
 bind('n', '<leader>q', ':q<CR>', opts) -- quit 
 bind('n', '<leader><leader>q', '<cmd>wa<cr><cmd>qa<cr>', opts)-- save all and exit
-bind('n', '<leader>x', ':bd<CR>', opts) -- quit 
+bind('n', '<leader>x', ':bp<bar>sp<bar>bn<bar>bd<CR>', opts) --  close buffer without closing window
 
 -- Move text up and down
 bind("v", "J", ":move '>+1<CR>gv-gv", opts)
